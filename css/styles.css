@@ -67,9 +67,19 @@ form textarea:focus {
   outline: none;
 }
 
-.error, 
 .hidden {
   display: none;
+}
+
+.error {
+  color: var(--red);
+  display: none;
+  padding-top: 1rem;
+}
+
+
+.error:last-of-type {
+  padding-bottom: 1rem;
 }
 
 label + div,
@@ -89,7 +99,7 @@ input[type=checkbox]{
 }
 
 .consent {
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
 .submitBtn {

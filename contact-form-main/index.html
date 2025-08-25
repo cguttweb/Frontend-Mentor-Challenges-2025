@@ -25,12 +25,12 @@
 
 <body>
   <main>
-    <form action="#">
+    <form onsubmit="validateForm()">
       <h1>Contact Us</h1>
       <label for="firstName">First Name:</label>
-      <input type="text" name="firstName" id="firstName" required>
+      <input type="text" name="firstName" id="firstName">
       <label for="lastName">Last Name:</label>
-      <input type="text" name="lastName" id="lastName" required>
+      <input type="text" name="lastName" id="lastName">
       <span class="error">This field is required</span>
       <label for="email">Email Address:</label>
       <input type="email" name="email" id="email">
@@ -44,18 +44,17 @@
       <div>
         <input type="radio" name="query" id="support" value="Support Request">
         <label for="support">Support Request</label>
-        <span class="error">Please select a query type</span>
       </div>
+      <div class="error">Please select a query type</div>
 
       <label for="message">Message</label>
       <textarea name="message" id="message"></textarea>
 
       <div class="consent">
-        <input type="checkbox" name="consent" id="consent" required>
+        <input type="checkbox" name="consent" id="consent">
         <label for="consent">I consent to being contacted by the team</label>
       </div>
 
-      <span class="error">This field is required</span>
       <span class="error">To submit this form, please consent to being contacted</span>
 
       <input class="submitBtn" type="submit" value="Submit">
@@ -73,6 +72,8 @@
       Coded by <a href="https://github.com/cguttweb">Chloe</a>.
     </div>
   </footer>
+
+  <script src="/js/form.js"></script>
 </body>
 
 </html>
