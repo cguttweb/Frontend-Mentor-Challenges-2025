@@ -25,7 +25,15 @@
 
 <body>
   <main>
-    <form onsubmit="validateForm()">
+    <div class="ty-msg hidden">
+      <img src="./assets/images/icon-success-check.svg" alt="">
+      <div class="msg-text">
+        <h2>Message Sent!</h2>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+
+    <form>
       <h1>Contact Us</h1>
       <label for="firstName">First Name:</label>
       <input type="text" name="firstName" id="firstName">
@@ -55,15 +63,11 @@
         <label for="consent">I consent to being contacted by the team</label>
       </div>
 
-      <span class="error">To submit this form, please consent to being contacted</span>
+      <span class="error consent-error">To submit this form, please consent to being contacted</span>
 
-      <input class="submitBtn" type="submit" value="Submit">
+      <input class="submitBtn" type="submit" id="submit" value="Submit">
     </form>
 
-    <div class="ty-msg hidden">
-      <p>Message Sent!</p>
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
-    </div>
   </main>
 
   <footer>
