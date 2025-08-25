@@ -9,9 +9,93 @@
   --grey-900: hsl(187, 24%, 22%);
   font-size: 62.5%;
   font-family: "Karla", sans-serif;
+  accent-color: var(--green-600);
 }
 
 body {
+  background-color: var(--lighter-green);
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+h1, p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--grey-900);
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+form {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  max-width: 375px;
+  padding: 3rem 2rem;
+}
+
+form label {
+  color: var(--grey-900);
+  margin: 1rem 0;
+}
+
+form label:not(:first-of-type){
+  padding-top: 1rem;
+}
+
+form label:not(input[type=radio]+label):after {
+  content: '*';
+  color: var(--green-600);
+}
+
+form input,
+form label + div,
+form label + div + div,
+textarea {
+  border: 1px solid var(--grey-500);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid var(--green-600);
+  cursor: pointer;
+  outline: none;
+}
+
+.error, 
+.hidden {
+  display: none;
+}
+
+label + div,
+label + div + div {
+  border: 1px solid var(--grey-500);
+}
+
+label + div {
+  margin-bottom: 1.4rem;
+}
+
+input[type=checkbox]{
+  float: left;
+  height: 1.5rem;
+  margin-right: 1rem;
+  width: 1.5rem;
+}
+
+.consent {
+  padding: 2rem 0;
+}
+
+.submitBtn {
+  background-color: var(--green-600);
+  border: 1px solid var(--green-600);
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
 }

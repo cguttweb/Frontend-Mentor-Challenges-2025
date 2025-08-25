@@ -35,14 +35,26 @@
       <label for="email">Email Address:</label>
       <input type="email" name="email" id="email">
       <span class="error">Please enter a valid email address</span>
+
       <label for="query">Query Type:</label>
-      <input type="radio" name="query" id="" value="General Enquiry">
-      <input type="radio" name="query" id="" value="Support Request">
-      <span class="error">Please select a query type</span>
+      <div>
+        <input type="radio" name="query" id="general" value="General Enquiry">
+        <label for="general">General Enquiry</label>
+      </div>
+      <div>
+        <input type="radio" name="query" id="support" value="Support Request">
+        <label for="support">Support Request</label>
+        <span class="error">Please select a query type</span>
+      </div>
+
       <label for="message">Message</label>
       <textarea name="message" id="message"></textarea>
-      <label for="consent">I consent to being contacted by the team</label>
-      <input type="checkbox" name="consent" id="consent" required>
+
+      <div class="consent">
+        <input type="checkbox" name="consent" id="consent" required>
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+
       <span class="error">This field is required</span>
       <span class="error">To submit this form, please consent to being contacted</span>
 
@@ -55,18 +67,12 @@
     </div>
   </main>
 
-
-
-
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/cguttweb">Chloe</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/cguttweb">Chloe</a>.
+    </div>
+  </footer>
 </body>
 
 </html>
