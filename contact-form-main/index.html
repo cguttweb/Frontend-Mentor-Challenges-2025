@@ -37,26 +37,32 @@
       <h1>Contact Us</h1>
       <label for="firstName">First Name:</label>
       <input type="text" name="firstName" id="firstName">
+      <span class="error firstname-error">This field is required</span>
+
       <label for="lastName">Last Name:</label>
       <input type="text" name="lastName" id="lastName">
-      <span class="error">This field is required</span>
+      <span class="error lastname-error">This field is required</span>
+
       <label for="email">Email Address:</label>
       <input type="email" name="email" id="email">
-      <span class="error">Please enter a valid email address</span>
+      <span class="error email-error">Please enter a valid email address</span>
 
-      <label for="query">Query Type:</label>
-      <div>
-        <input type="radio" name="query" id="general" value="General Enquiry">
-        <label for="general">General Enquiry</label>
-      </div>
-      <div>
-        <input type="radio" name="query" id="support" value="Support Request">
-        <label for="support">Support Request</label>
-      </div>
-      <div class="error">Please select a query type</div>
+      <fieldset>
+        <legend>Query Type:</legend>
+        <div>
+          <input type="radio" name="query" id="general" value="General Enquiry">
+          <label for="general">General Enquiry</label>
+        </div>
+        <div>
+          <input type="radio" name="query" id="support" value="Support Request">
+          <label for="support">Support Request</label>
+        </div>
+      </fieldset>
+      <div class="error query-error">Please select a query type</div>
 
       <label for="message">Message</label>
       <textarea name="message" id="message"></textarea>
+      <span class="error message-error">This field is required</span>
 
       <div class="consent">
         <input type="checkbox" name="consent" id="consent">

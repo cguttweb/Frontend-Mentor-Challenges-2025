@@ -39,7 +39,8 @@ form {
   padding: 3rem 2rem;
 }
 
-form label {
+form label,
+form legend {
   color: var(--grey-900);
   margin: 1rem 0;
 }
@@ -54,8 +55,8 @@ form label:not(input[type=radio]+label):after {
 }
 
 form input,
-form label + div,
-form label + div + div,
+form legend + div,
+form legend + div + div,
 textarea {
   border: 1px solid var(--grey-500);
   border-radius: 0.75rem;
@@ -69,6 +70,11 @@ form textarea:focus {
   outline: none;
 }
 
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
 .hidden {
   display: none;
 }
@@ -79,17 +85,16 @@ form textarea:focus {
   padding-top: 1rem;
 }
 
-
 .error:last-of-type {
   padding-bottom: 1rem;
 }
 
-label + div,
-label + div + div {
+legend + div,
+legend + div + div {
   border: 1px solid var(--grey-500);
 }
 
-label + div {
+legend + div {
   margin-bottom: 1.4rem;
 }
 
