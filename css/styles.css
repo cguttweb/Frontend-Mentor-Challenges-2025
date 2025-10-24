@@ -138,3 +138,34 @@ input[type=checkbox]{
   font-size: 1.6rem;
 }
 
+/* Desktop Styles */
+@media (min-width: 80rem) {
+  body {
+    max-width: 144rem; /* 1440px */
+  }
+  
+  form {
+    margin: 4rem auto;
+    max-width: 60rem;
+    padding: 5rem;
+  }
+  
+  fieldset {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  fieldset div {
+    width: 100%;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  .ty-msg {
+    left: calc(50% - 3rem);
+    transform: translateX(-50%);
+    width: 70rem;
+  }
+}

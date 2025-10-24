@@ -31,6 +31,9 @@ function isEmpty(input, isCheckbox = false) {
 
 function showThankYouMessage() {
   document.querySelector('.ty-msg').style.display = 'block';
+  setTimeout(() => {
+    document.querySelector('.ty-msg').style.display = 'none';
+  }, 2000);
 }
 
 function validateForm() {
