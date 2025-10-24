@@ -11,7 +11,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -23,8 +22,8 @@ Users should be able to:
 
 - Complete the form and see a success toast message upon successful submission - DONE
 - Receive form validation messages if:
-  - A required field has been missed - DONE
-  - The email address is not formatted correctly - NEED TO LOOK AT THIS
+  - A required field has been missed
+  - The email address is not formatted correctly
 - Complete the form only using their keyboard
 - Have inputs, error messages, and the success message announced on their screen reader
 - View the optimal layout for the interface depending on their device's screen size - WIP
@@ -32,15 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+![Desktop Form Screenshot](./assets/images/Frontend-Mentor-Contact-Form.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Repo Link](https://github.com/cguttweb/Frontend-Mentor-Challenges-2025/tree/main/contact-form-main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -56,21 +51,16 @@ I started with the HTML and CSS styling on mobile for mobile-first before then s
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+How the use of helper functions can streamline code to help keep things DRY e.g.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```js
+function setError(selector, show) {
+  const el = document.querySelector(selector);
+  if (el) {
+    el.style.display = show ? 'block' : 'none';
+  }
 }
 ```
-
-### Continued development
 
 ### Useful resources
 
